@@ -1,0 +1,151 @@
+
+/* style.css */
+body {
+    background: url('images/agri_background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.3), rgba(76, 175, 80, 0.2));
+    z-index: -1;
+    animation: fadeGlow 2s infinite alternate;
+}
+
+@keyframes fadeGlow {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+.form-container {
+    background: rgba(73, 176, 135, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(7, 238, 203, 0.338);
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 480px;
+    text-align: center;
+    animation: float 12s ease-in-out infinite;
+}
+
+.form-container h2 {
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #a38d36, #0fbdd0, #551100);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.form-container input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 152, 121, 0.4);
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #009879, #007b63, #00664f);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: slideIn 0.8s ease-out;
+}
+
+.form-container button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #007b63, #286f9b);
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Remove unused or conflicting styles */
+.prompt-content, .prompt-content h1, .prompt-content:hover {
+    /* Removed to avoid conflicts; not used in provided pages */
+}
+
+/* Keep other styles as needed */
+.dashboard-table {
+    width: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(245, 8, 8, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-table th, .dashboard-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.dashboard-table th {
+    background: linear-gradient(45deg, #4caf50, #2e7d32);
+    color: white;
+    font-weight: 600;
+}
+
+.dashboard-table tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.bg-agri-green {
+    background: linear-gradient(45deg, #2e7d32, #4caf50);
+}
+
+.table-row {
+    transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+    background-color: rgba(46, 125, 50, 0.1);
+}
