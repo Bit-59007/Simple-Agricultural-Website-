@@ -1,11 +1,13 @@
 # Simple-Agricultural-Website-
 The Agri Shop Project is a web-based online store for selling agricultural products. Customers can browse products, place orders, choose payment methods, and send messages to the shop owner. Owners can manage products, track orders, handle payments, and monitor account balances.
 Agri Shop – Complete Project Description
-**1. Introduction**
+<br>
+<h2>1. Introduction</h2>
+
 
 The Agri Shop Project is a complete web-based agricultural e-commerce system designed to help customers buy farming products online and allow shop owners to manage their business efficiently. The system makes product management, order processing, payment tracking, and customer communication simple and organized.
 
-**The project is developed using:**
+<h3>The project is developed using:</h3>
 
 MySQL – for database management
 
@@ -15,7 +17,7 @@ HTML, CSS & Tailwind CSS – for frontend design
 
 XAMPP Server – for local hosting and deployment
 
-**2. Project Purpose**
+<h2>2. Project Purpose</h2>
 
 The main goal of this project is to:
 
@@ -27,11 +29,11 @@ Maintain proper database relationships for accurate data storage.
 
 Ensure smooth communication between customers and owners.
 
-3.**System Architecture**
+<h2>3.System Architecture</h2>
 
 The system has three main layers:
 
-1. Database Layer (MySQL)
+<h3>1. Database Layer (MySQL)</h3>
 
 Stores all project data in structured tables.
 
@@ -39,7 +41,7 @@ Maintains relationships using primary and foreign keys.
 
 Ensures data integrity and organization.
 
-2. Application Layer (PHP)
+<h3>2. Application Layer (PHP)</h3>
 
 Handles user login and registration.
 
@@ -49,7 +51,7 @@ Processes orders and payments.
 
 Controls account transactions.
 
-3. Presentation Layer (Frontend)
+<h3>3. Presentation Layer (Frontend)</h3>
 
 Built with HTML and Tailwind CSS.
 
@@ -57,12 +59,12 @@ Fully responsive and user-friendly design.
 
 Includes animations and modern UI components.
 
-4. **Database Design**
+<h2>4. Database Design</h2>
 
-The database name is first_data.
+<h3>The database name is first_data.</h3>
 
-Main Tables:
-1. Users
+**Main Tables:**
+<h3>1. Users</h3>
 
 Stores:
 
@@ -74,11 +76,11 @@ Password
 
 Role (Customer or Owner)
 
-2. Categories
+<h3>2. Categories</h3>
 
 Stores product categories.
 
-3. Products
+<h3>3. Products</h3>
 
 Stores:
 
@@ -94,7 +96,7 @@ Company
 
 Contact information
 
-4. Orders
+<h3>4. Orders</h3>
 
 Stores:
 
@@ -112,9 +114,9 @@ Order status
 
 Order date
 
-5. **Owner_Accounts**
+<h2>5. Owner_Accounts</h2>
 
-Stores different account types:
+<h3>Stores different account types:</h3>
 
 Main Account
 
@@ -125,7 +127,7 @@ JazzCash
 Meezan Bank IDO
 Also tracks their balances.
 
-6. **Transactions**
+<h2>6. Transactions</h2>
 
 Records:
 
@@ -141,7 +143,7 @@ Status
 
 Date
 
-7. **Contact_Messages**
+<h2>7. Contact_Messages</h2>
 
 Stores:
 
@@ -153,7 +155,7 @@ Message
 
 Submission time
 
-5. Key Features
+ <h2>Key Features</h2>
 ✅ User Management
 
 User registration and login.
@@ -222,7 +224,7 @@ Total revenue
 
 Account balances
 
-6. **Technical Implementation**
+<h2>6. Technical Implementation</h2>
 🔹 Frontend
 
 Built with HTML & Tailwind CSS.
@@ -261,7 +263,7 @@ MySQL manages the database.
 
 phpMyAdmin is used for database management.
 
-7. Security Measures
+<h2>7. Security Measures</h2>
 
 SQL Injection prevention using prepared statements.
 
